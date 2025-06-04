@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - ProClean Kulov</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-pro">ProClean</span> <span class="logo-kulov">Kulov</span>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <h1>Kontakt</h1>
+            <p>Haben Sie Fragen oder möchten Sie ein Angebot erhalten? Kontaktieren Sie uns noch heute!</p>
+        </section>
+
+        <section class="contact-info">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adresse</h3>
+                    <p>Silbersteinstraße 90<br>12051 Berlin</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>17624044520</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-Mail</h3>
+                    <p>fa.kulov-berlin@mail.de</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Öffnungszeiten</h3>
+                    <p>Montag - Freitag: 8:00 - 18:00 Uhr<br>
+                    Samstag: 9:00 - 14:00 Uhr<br>
+                    Sonntag: Geschlossen</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Schreiben Sie uns</h2>
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Betreff</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Nachricht</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Nachricht senden</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Unsere Lage</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.5885882853716!2d13.4418433!3d52.4734716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84fb65d9475f9%3A0x9eac3c44d5e7f23!2sSilbersteinstra%C3%9Fe%2090%2C%2012051%20Berlin%2C%20Germany!5e0!3m2!1sen!2sus!4v1654321234567!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ProClean Kulov</h3>
+                <p>Professionelle Reinigungsdienstleistungen in Berlin.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Silbersteinstraße 90<br>
+                12051 Berlin<br>
+                Telefon: 17624044520<br>
+                E-Mail: fa.kulov-berlin@mail.de</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Öffnungszeiten</h3>
+                <p>Montag - Freitag: 8:00 - 18:00 Uhr<br>
+                Samstag: 9:00 - 14:00 Uhr<br>
+                Sonntag: Geschlossen</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 ProClean Kulov. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

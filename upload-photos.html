@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Upload - ProClean Kulov</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-pro">ProClean</span> <span class="logo-kulov">Kulov</span>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Снимки качване</h2>
+            
+            <form class="password-form">
+                <label for="password">Моля, въведете паролата за достъп:</label>
+                <input type="password" id="password" required>
+                <button type="submit" class="btn">Вход</button>
+            </form>
+            
+            <form class="upload-form">
+                <div class="form-group">
+                    <label for="category">Изберете категория:</label>
+                    <select id="category" required>
+                        <option value="">-- Изберете категория --</option>
+                        <option value="baureinigung">Baureinigung</option>
+                        <option value="grundreinigung">Grundreinigung</option>
+                        <option value="unterhaltsreinigung">Unterhaltsreinigung</option>
+                        <option value="fensterreinigung">Fensterreinigung</option>
+                        <option value="teppichreinigung">Teppichreinigung</option>
+                        <option value="garagenreinigung">Garagenreinigung</option>
+                        <option value="gartenarbeit">Gartenarbeit</option>
+                        <option value="allgemein">Allgemein</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Описание (незадължително):</label>
+                    <textarea id="description" rows="3"></textarea>
+                </div>
+                
+                <div class="file-upload">
+                    <label for="file-input">Изберете снимки за качване:</label>
+                    <input type="file" id="file-input" multiple accept="image/*">
+                    <button type="button" class="file-upload-btn">
+                        <i class="fas fa-cloud-upload-alt"></i> Изберете снимки
+                    </button>
+                </div>
+                
+                <div class="preview-container"></div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="status-message"></div>
+                </div>
+                
+                <button type="submit" class="btn">Качване на снимки</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ProClean Kulov</h3>
+                <p>Professionelle Reinigungsdienstleistungen in Berlin.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Silbersteinstraße 90<br>
+                12051 Berlin<br>
+                Telefon: 17624044520<br>
+                E-Mail: fa.kulov-berlin@mail.de</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Öffnungszeiten</h3>
+                <p>Montag - Freitag: 8:00 - 18:00 Uhr<br>
+                Samstag: 9:00 - 14:00 Uhr<br>
+                Sonntag: Geschlossen</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 ProClean Kulov. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
